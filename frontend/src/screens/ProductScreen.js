@@ -7,7 +7,7 @@ import products from '../products'
 const ProductScreen = ({match}) => {
     const product = products.find((p) => p._id === match.params.id)
     console.log(product)
-return
+return (
 <div>
     <Link className='btn btn-light my-3' to='/'>
     </Link>
@@ -68,6 +68,6 @@ return
         </Col>
     </Row>
 </div>
-}
+)}
 
 export default ProductScreen 
